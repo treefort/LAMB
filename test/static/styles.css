@@ -1,0 +1,21 @@
+body {
+	background-color: pink;
+	padding:30px;
+}
+
+li {
+	padding:4px;
+}
+
+form {
+	width: 180px;
+}
+
+input {
+	width:100%;
+}
+
+button {
+	width: 100%;
+	padding:8px;
+}

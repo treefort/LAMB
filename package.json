@@ -1,0 +1,31 @@
+{
+  "name": "LAMB",
+  "version": "0.0.1",
+  "description": "LAMB. LOOK AT MAH BUTTHOLE.",
+  "main": "lamb.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/treefort/LAMB.git"
+  },
+  "keywords": [
+    "cats",
+    "butthole",
+    "nodejs",
+    "express",
+    "middleware",
+    "markup",
+    "nonsense"
+  ],
+  "author": "Evan Booth",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/treefort/LAMB/issues"
+  },
+  "homepage": "https://github.com/treefort/LAMB"
+}

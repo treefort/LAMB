@@ -1,0 +1,17 @@
+{
+  "name": "lamb_test",
+  "version": "0.0.1",
+  "description": "LAMB tests.",
+  "main": "test_basic.js",
+  "scripts": {
+    "basic": "node test_basic.js",
+    "line": "node test_line.js",
+    "middleware": "node test_middleware.js"
+  },
+  "author": "Evan Booth",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^0.6.2",
+    "express": "^4.8.6"
+  }
+}

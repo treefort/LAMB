@@ -1,0 +1,4 @@
+# modules folder(s)
+# run: npm install in the respective director(y|ies) for all that shizz
+./test/node_modules
+./node_modules
