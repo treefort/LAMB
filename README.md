@@ -52,6 +52,12 @@ npm line {your LAMB markup}   // converts one line of LAMB markup
 npm middleware                // creates an express http server at localhost:3000
 ```
 
+# todo
+- [ ] restructure tags to inherit from architypes (think: self-closing vs. open/close)
+- [ ] support for basic text transformations (as it stands, basically all attributes get lcase'd)
+- [ ] write support utilities for quickly testing tags (chiefly the regex)
+
+
 #Here's the markup:
 
 Tags
