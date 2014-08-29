@@ -90,6 +90,54 @@ lamb.Tags = function(){
 lamb.TagFragments = function(){
 	return TagFragments;
 }
+
+// prints github-friendly markdown to stdout
+lamb.showSyntax = function(){
+
+	var tags = Tags;
+	console.log('LAMB Syntax');
+	console.log('=========\n\n');
+	console.log('Tags\n-----');
+	tags.map(function(tag){
+		console.log('### Tag:', htmlEntities(tag.name), '\n');
+		console.log('**Output**:', htmlEntities(tag.output), '\n');
+		console.log('**Tag Patterns**', '\n');
+		tag.patterns.map(function(pattern){
+			console.log('\t', pattern, '\n');
+		});
+
+		var tagFrags = tag.requiredFragments();
+		if (tagFrags.length){
+			console.log('**Fragments**', '\n');
+			tagFrags.map(function(frag){
+				console.log('*', frag.handle, '\n'); 
+			});
+		}
+		console.log('**Closer:**', htmlEntities(tag.closer || 'none'), '\n\n--');
+		console.log('\n');
+
+	});
+
+
+	console.log('Tags Fragments\n-----');
+	var frags = TagFragments;
+	frags.map(function(frag){
+		console.log('### Fragment:', htmlEntities(frag.handle), '\n');
+		console.log('**Output**:', htmlEntities(frag.output), '\n');
+		console.log('**Fragment Patterns**', '\n');
+		frag.patterns.map(function(pattern){
+			console.log('\t', pattern, '\n');
+		});
+
+		console.log('\n\n--');
+		console.log('\n');
+	});
+}
+
+function htmlEntities(str) {
+    return '`' + str + '`';
+}
+
 	
 // process lamb markup line by line
 var processLine = function(line, scope){
@@ -182,3 +230,5 @@ var dumpClosers = function(scope){
 util.inherits(lamb, EventEmitter);
 
 module.exports = lamb;
+
+lamb.showSyntax();
