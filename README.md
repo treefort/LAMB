@@ -56,6 +56,7 @@ npm middleware                // creates an express http server at localhost:300
 - [ ] restructure tags to inherit from architypes (think: self-closing vs. open/close)
 - [ ] support for basic text transformations (as it stands, basically all attributes get lcase'd)
 - [ ] write support utilities for quickly testing tags (chiefly the regex)
+- [ ] write generator for a sublime text plug-in (syntax highlighting, code completion, etc. ...bahahaha)
 
 
 #Here's the markup:
