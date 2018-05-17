@@ -27,5 +27,8 @@
   "bugs": {
     "url": "https://github.com/treefort/LAMB/issues"
   },
-  "homepage": "https://github.com/treefort/LAMB"
+  "homepage": "https://github.com/treefort/LAMB",
+  "dependencies": {
+    "lodash": "^4.17.10"
+  }
 }
