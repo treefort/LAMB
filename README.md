@@ -22,15 +22,17 @@ THINGS I HATE ILL NEVER LET GO HEADING LEFT.
 There are a few ways to use LAMB:
 
 **Whatever you'd call this method:**
-```````javascript
+```javascript
 var lamb = require('../path/to/lamb');
 
 lamb($strLAMBMarkup, function(err, data){
 		... // data == html
 });
 ```
+
 **...and as Express 3.x middleware:**
-```````javascript
+
+```javascript
 var express   	= require('express'),
 	  lamb	      = require('../path/to/lamb'),
 	  app     	  = express();
@@ -57,6 +59,7 @@ npm middleware                // creates an express http server at localhost:300
 - [ ] support for basic text transformations (as it stands, basically all attributes get lcase'd)
 - [ ] write support utilities for quickly testing tags (chiefly the regex)
 - [ ] write generator for a sublime text plug-in (syntax highlighting, code completion, etc. ...bahahaha)
+
 
 
 #Here's the markup:
